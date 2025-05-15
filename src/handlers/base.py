@@ -1,6 +1,6 @@
 from aiogram import types, Dispatcher
 from aiogram.filters import Command
-from src.keyboards.main_kb import main_menu
+from keyboards.main_kb import main_menu
 
 
 async def start(message: types.Message):
