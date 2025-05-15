@@ -19,4 +19,4 @@ async def send_longread(message: types.Message):
 
 
 def register_longread_handlers(dp: Dispatcher):
-    dp.message.register(send_longread, lambda msg: msg.text == "📜 Случайня статья")
+    dp.message.register(send_longread, lambda msg: msg.text == "📜 Случайная статья")

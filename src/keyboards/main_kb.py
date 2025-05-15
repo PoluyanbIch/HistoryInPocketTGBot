@@ -6,7 +6,7 @@ def main_menu():
         keyboard=[
             [KeyboardButton(text="📜 Случайный факт")],
             [KeyboardButton(text="🎲 Викторина")],
-            [KeyboardButton(text="📜 Случайня статья")]
+            [KeyboardButton(text="📜 Случайная статья")]
         ],
         resize_keyboard=True
     )
