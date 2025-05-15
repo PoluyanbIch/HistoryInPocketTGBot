@@ -1,7 +1,7 @@
 from aiogram import types, Dispatcher
-from src.utils.storage import load_data, get_random_quiz, check_answer, save_data
-from src.keyboards.quiz_kb import quiz_keyboard
-from src.keyboards.main_kb import main_menu
+from utils.storage import load_data, get_random_quiz, check_answer, save_data
+from keyboards.quiz_kb import quiz_keyboard
+from keyboards.main_kb import main_menu
 
 
 async def start_quiz(message: types.Message):

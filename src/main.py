@@ -4,7 +4,7 @@ from config import BOT_TOKEN
 from handlers.base import register_base_handlers
 from handlers.facts import register_facts_handlers
 from handlers.quiz import register_quiz_handlers
-from handlers.rating import register_rating_handlers
+from handlers.longread import register_longread_handlers
 import asyncio
 
 
@@ -14,9 +14,9 @@ async def main():
 
     # Регистрация обработчиков
     register_base_handlers(dp)
+    register_longread_handlers(dp)
     register_facts_handlers(dp)
     register_quiz_handlers(dp)
-    register_rating_handlers(dp)
 
     await dp.start_polling(bot)
 
