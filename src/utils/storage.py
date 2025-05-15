@@ -31,6 +31,9 @@ def get_random_quiz() -> Dict[str, Any]:
     data = load_data()
     return random.choice(data["quizzes"])
 
+def get_random_story() -> Dict[str, Any]:
+    data = load_data()
+    return random.choice(data["longreads"])
 
 def check_answer(user_id: int, answer: str) -> bool:
     """Проверяет правильность ответа пользователя"""

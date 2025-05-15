@@ -1,6 +1,6 @@
 from aiogram import types, Dispatcher
-from src.utils.storage import get_random_fact
-from src.keyboards.main_kb import main_menu
+from utils.storage import get_random_fact
+from keyboards.main_kb import main_menu
 
 
 async def send_daily_fact(message: types.Message):
